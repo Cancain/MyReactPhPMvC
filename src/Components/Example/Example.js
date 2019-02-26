@@ -7,18 +7,9 @@ class Example extends Component {
         message: ''
     }
 
-    componentDidMount() {
-        axios.get('Examples/hello/-1')
-            .then(response => console.log(response));
-    }
-
     messageHandler = () => {
         axios.get('Examples/hello/-1')
-            .then(response => {
-                const data = response
-                this.setState({ message: data });
-                console.log(response);
-            })
+            .then(response => this.setState({ message: response.data }));
     }
 
     render() {
