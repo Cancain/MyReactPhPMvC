@@ -6,7 +6,7 @@ import './index.css';
 import App from './Containers/App';
 import * as serviceWorker from './serviceWorker';
 
-axios.defaults.baseURL = 'http://localhost/react-mvc/Backend/libraries/bootstrap.php';
+axios.defaults.baseURL = 'http://localhost/react-mvc/backend/libraries/bootstrap.php';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
