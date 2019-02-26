@@ -8,12 +8,8 @@ class App extends Component {
     message: null
   }
 
-  componentDidUpdate() {
-
-  }
-
   messageHandler = () => {
-    axios.get('Example/hello/-1')
+    axios.get('Examples/hello/-1')
       .then(response => {
         console.log(response);
       })
