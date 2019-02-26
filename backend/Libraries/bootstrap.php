@@ -6,7 +6,7 @@ header("Access-Control-Allow-Methods: GET,PUT,POST,DELETE");
 header("Access-Control-Allow-Headers: Content-Type, Authorization");
 
 //Require the config file 
-require_once( '../config/Config.php');
+require_once( '../Config/config.php');
 
 //Reqire libraries
 require_once('Core.php');
