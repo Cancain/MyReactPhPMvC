@@ -42,11 +42,6 @@ class Core{
         $url = filter_var($url, FILTER_SANITIZE_URL);
         $url = explode('/', $url);
         $url = array_slice($url, -3);
-        if($url[0] === 'Core.php'){
-            $url[0] = $url[1];
-            $url[1] = $url[2];
-            unset($url[3]); 
-        }
         return $url;
     }
     
